@@ -3,8 +3,10 @@
 <head>
 <title>....::: COSTAMAGNA :::...</title>
 <meta name="description" content="Servicio de cosecha Costamagna">
-<meta name="keywords" content="cosecha, servicio de cosecha, cosechadora, trilla, contratista rural, rural,recoleccion , soja , maiz, girasol, trigo, cebada ">
+<meta name="keywords" content="cosecha, servicio de cosecha, cosechadora, trilla, contratista rural, rural,recoleccion , soja , maiz, girasol, trigo, cebada, cosechadoras, agro, agricola, vassalli, case, jhon deere, new holland">
 <meta name="author" content="Costamagna">
+<meta name="robots" content="index, follow">
+<meta name="revisit-after" content="7 days">
 <meta property="og:title" content="Servicio De Cosecha Costamagna">
 <meta property="og:description" content="ofrecemos soluciones personalizadas para satisfacer
 las necesidades de su empresa agrícola.">
@@ -12,6 +14,10 @@ las necesidades de su empresa agrícola.">
 <meta property="og:url" content="www.contratistarural.com.ar">
 <meta property="og:image" content="www.contratistarural.com.ar/images/header.jpg">
 <meta name="generator" content="contratistarural.com.ar">
+<link href="https://contratistarural.com.ar/" rel="canonical">
+<link href="favicon%2d16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="favicon.png" rel="icon" sizes="300x300" type="image/png">
+<link href="favicon.png" rel="icon" sizes="300x300" type="image/png">
 <style>
 div#container
 {
@@ -34,6 +40,15 @@ body
    line-height: 1.1875;
    margin: 0;
    text-align: center;
+}
+#preloader
+{
+   background: #FFFFFF url("images/bar-circle.gif") no-repeat center center;
+   bottom: 0;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 99999;
 }
 </style>
 <link href="font-awesome.min.css" rel="stylesheet">
@@ -848,11 +863,6 @@ body
    margin: 0;
    padding: 0;
 }
-#TextArt1
-{
-   border-width: 0;
-   vertical-align: top;
-}
 </style>
 <script src="jquery-1.12.4.min.js"></script>
 <script src="wb.carousel.min.js"></script>
@@ -900,8 +910,14 @@ $(document).ready(function()
       pagination: false,
       effectlength: 2000
    });
+   if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {$('#preloader').remove();}
+});
+$(window).on('load', function()
+{
+   $('#preloader').remove();
 });
 </script>
+<!-- Insert Google Analytics code here -->
 </head>
 <body>
 <div id="container">
@@ -1044,15 +1060,14 @@ $(document).ready(function()
 <div id="wb_Image13" style="position:absolute;left:516px;top:0px;width:84px;height:80px;z-index:51;">
 <img src="images/logo%20Maquina%20sin%20fondo.png" id="Image13" alt="" width="84" height="81"></div>
 <div id="wb_Text4" style="position:absolute;left:6px;top:438px;width:512px;height:114px;z-index:52;">
-<p>La agricultura es una de las actividades mas importantes de nuestro pais, nuestra empresa tiene 60&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;de experiencia en esta area. Brindamos el servicio de cosecha de granos con nuestros completos y modernos equipos axiales de ultima generacion, equipados con mapeo satelital, monitor de rinde y balanza para que tu cosecha sea rapida y precisa.</p></div>
-<div id="wb_TextArt1" style="position:absolute;left:237px;top:460px;width:32px;height:12px;z-index:53;">
-<img src="images/img0018.png" id="TextArt1" alt="años" title="años" width="32" height="12" style="width:32px;height:12px;"></div>
+<p>La agricultura es una de las actividades mas importantes de nuestro pais, nuestra empresa tiene 60 años de experiencia en esta area. Brindamos el servicio de cosecha de granos con nuestros completos y modernos equipos axiales de ultima generacion, equipados con mapeo satelital, monitor de rinde y balanza para que tu cosecha sea rapida y precisa.</p></div>
 </div>
-<div id="Layer4" style="position:absolute;text-align:center;left:0px;top:1155px;width:100%;height:67px;z-index:54;">
+<div id="Layer4" style="position:absolute;text-align:center;left:0px;top:1155px;width:100%;height:67px;z-index:53;">
 <div id="Layer4_Container" style="width:800px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 <div id="wb_Text11" style="position:absolute;left:7px;top:26px;width:780px;height:14px;text-align:center;z-index:0;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:11px;">Copyright © 2024 by Servicio Costamagna&nbsp;&nbsp; All Rights reserved&nbsp; ·&nbsp; E-Mail: kevincos94@outlook.com</span></div>
 </div>
 </div>
+<div id="preloader"></div>
 </body>
 </html>
